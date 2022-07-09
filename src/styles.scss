@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+  --nav-height: 50px;
+}
+nav {
+  height: var(--nav-height);
+  background-color: #2c8ee5;
+  display: flex;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    margin-left: 4px;
+    color: white;
+    &:visited {
+      color: white;
+    }
+
+    &.active {
+      color: black;
+    }
+
+    &:hover {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.outlet-container {
+  height: calc(100vh - var(--nav-height));
+  overflow: auto;
+}

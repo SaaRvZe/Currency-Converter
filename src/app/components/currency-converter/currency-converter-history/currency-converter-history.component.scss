@@ -1,0 +1,16 @@
+.container {
+  text-align: center;
+
+  .mat-table {
+   margin: 0 auto;
+    min-width: 300px;
+
+    .mat-row:nth-child(even) {
+      background-color: rgb(128, 128, 128, 0.5);
+    }
+
+    .mat-cell {
+      padding: 8px;
+    }
+  }
+}
