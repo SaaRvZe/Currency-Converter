@@ -9,7 +9,7 @@
       <mat-label>From</mat-label>
       <mat-select [formControl]="fromControl">
         <mat-option *ngFor="let currency of currencies | keyvalue" [value]="currency.key">
-          {{currency.key}}
+          {{currency.key}} ( {{currency.value}} )
         </mat-option>
       </mat-select>
     </mat-form-field>
@@ -18,7 +18,7 @@
       <mat-label>To</mat-label>
       <mat-select [formControl]="toControl">
         <mat-option *ngFor="let currency of currencies | keyvalue" [value]="currency.key">
-          {{currency.key}} ({{currency.value}})
+          {{currency.key}} ( {{currency.value}} )
         </mat-option>
       </mat-select>
     </mat-form-field>
